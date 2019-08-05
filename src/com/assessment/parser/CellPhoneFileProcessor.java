@@ -1,6 +1,7 @@
 package com.assessment.parser;
 
 import com.assessment.Employee;
+import com.assessment.Pair;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -8,9 +9,12 @@ import java.util.*;
 
 public class CellPhoneFileProcessor {
 
-    Map<Integer, Employee> processor(String fileName) {
+    public Pair<Map<Integer, Employee>, Map<String, List<Integer>> > processor(String fileName) {
+
+
         Map<Integer,Employee> employeeMap = new HashMap<>();
         Map<String, List<Integer>> cellPhoneMap = new HashMap<>();
+
         try {
             Scanner ob = new Scanner(new File("./input/" + fileName));
             if(ob.hasNext()){
@@ -39,6 +43,7 @@ public class CellPhoneFileProcessor {
         {
             System.out.println("Message : " +filenotfound.getMessage()); // Handle exception
         }
-        return employeeMap;
+        return new Pair<>(employeeMap, cellPhoneMap);
     }
+
 }

@@ -1,6 +1,7 @@
 package com.assessment.parser;
 
 import com.assessment.CellPhoneUsage;
+import com.assessment.CellPhoneUsageWrapper;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -8,8 +9,11 @@ import java.util.*;
 
 public class CellPhoneUsageFileProcessor {
 
-    Map<Integer, List<CellPhoneUsage>> processor(String fileName) {
+    public CellPhoneUsageWrapper processor(String fileName) {
         Map<Integer, List<CellPhoneUsage>> map = new HashMap<>();
+        Integer totalMins = 0;
+        Double totalData = 0.0;
+
         try {
             Scanner ob = new Scanner(new File("./input/" + fileName));
             if (ob.hasNext()) {
@@ -25,6 +29,9 @@ public class CellPhoneUsageFileProcessor {
                 c.setTotalData(Double.parseDouble(col[0]));
                 c.setTotalMinutes(Integer.parseInt(col[0]));
 
+                totalMins+=c.getTotalMinutes();
+                totalData+=c.getTotalData();
+
                 List<CellPhoneUsage> cellPhoneUsages = map.getOrDefault(c.getEmployeeId(), new ArrayList<>());
                 cellPhoneUsages.add(c);
                 map.put(c.getEmployeeId(), cellPhoneUsages);
@@ -33,6 +40,11 @@ public class CellPhoneUsageFileProcessor {
         } catch (FileNotFoundException filenotfound) {
             System.out.println("Message : " + filenotfound.getMessage()); // Handle exception
         }
-        return map;
+
+        CellPhoneUsageWrapper wrapper = new CellPhoneUsageWrapper();
+        wrapper.setMap(map);
+        wrapper.setTotaldata(totalData);
+        wrapper.setTotalMinutes(totalMins);
+        return wrapper;
     }
 }
