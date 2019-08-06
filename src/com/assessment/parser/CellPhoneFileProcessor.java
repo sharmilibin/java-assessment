@@ -17,13 +17,13 @@ public class CellPhoneFileProcessor {
 
         try {
             Scanner ob = new Scanner(new File("./input/" + fileName));
-            if(ob.hasNext()){
-                ob.next(); // skipping header line - row 1
+            if(ob.hasNextLine()){
+                ob.nextLine(); // skipping header line - row 1
             }
 
-            while (ob.hasNext())
+            while (ob.hasNextLine())
             {
-                String line = ob.next();
+                String line = ob.nextLine();
                 String[] col= line.split(",");
                 Employee e = new Employee();
                 e.setEmployeeId(Integer.parseInt(col[0]));

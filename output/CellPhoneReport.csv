@@ -1,0 +1,174 @@
+Cell Phone Usage Report
+Report Run Date,Mon Aug 05 18:44:50 MDT 2019
+Number of Phones,9
+Number of models,2
+Total Minutes,48698
+Total Data,997.6799999999994
+Average Minutes,5410
+Average Data,110.85333333333327
+
+Cell Phone Usage per company
+Cell Phone,Apple iPhone 6
+Employee Id,Employee Name,Model,Purchase Date
+1904,Peter Griffin,Apple iPhone 6,20160101
+Minutes and Data Usage per month
+Month & Year,Minutes,Data
+2017 September,149,2.67
+2017 October,724,17.940000000000005
+2017 November,260,8.51
+2017 December,404,10.42
+2018 January,563,12.68
+2018 February,229,10.709999999999999
+2018 March,452,10.69
+2018 April,1093,14.74
+2018 May,460,10.09
+2018 June,379,6.6
+2018 July,517,17.63
+2018 August,380,5.41
+2018 September,247,3.78
+
+Employee Id,Employee Name,Model,Purchase Date
+1905,Lois Griffin,Apple iPhone 6,20150405
+Minutes and Data Usage per month
+Month & Year,Minutes,Data
+2017 September,172,3.0700000000000003
+2017 October,410,7.210000000000001
+2017 November,694,16.759999999999998
+2017 December,860,19.210000000000004
+2018 January,442,12.799999999999999
+2018 February,393,7.19
+2018 March,427,9.01
+2018 April,354,7.05
+2018 May,336,11.35
+2018 June,421,8.149999999999999
+2018 July,480,10.959999999999999
+2018 August,717,9.47
+2018 September,177,4.989999999999999
+
+Employee Id,Employee Name,Model,Purchase Date
+1907,Meg Griffin,Apple iPhone 6,20160101
+Minutes and Data Usage per month
+Month & Year,Minutes,Data
+2017 September,207,2.5999999999999996
+2017 October,461,7.72
+2017 November,445,10.81
+2017 December,473,6.36
+2018 January,728,14.399999999999999
+2018 February,762,9.37
+2018 March,734,10.979999999999999
+2018 April,468,13.1
+2018 May,346,8.48
+2018 June,388,5.640000000000001
+2018 July,578,12.61
+2018 August,146,7.210000000000001
+2018 September,47,0.29000000000000004
+
+Employee Id,Employee Name,Model,Purchase Date
+1908,Glenn Quagmire,Apple iPhone 6,20150405
+Minutes and Data Usage per month
+Month & Year,Minutes,Data
+2017 September,63,3.6499999999999995
+2017 October,180,6.630000000000001
+2017 November,492,7.7
+2017 December,531,13.01
+2018 January,460,11.27
+2018 February,286,8.959999999999999
+2018 March,555,7.179999999999999
+2018 April,181,3.9000000000000004
+2018 May,648,12.090000000000002
+2018 June,426,9.290000000000001
+2018 July,474,10.680000000000001
+2018 August,345,5.82
+2018 September,328,3.68
+
+Employee Id,Employee Name,Model,Purchase Date
+1910,Cleveland Brown,Apple iPhone 6,20160101
+Minutes and Data Usage per month
+Month & Year,Minutes,Data
+2017 September,32,2.59
+2017 October,473,8.939999999999998
+2017 November,549,8.03
+2017 December,286,3.09
+2018 January,381,7.87
+2018 February,435,8.67
+2018 March,467,13.510000000000002
+2018 April,450,10.069999999999999
+2018 May,377,6.969999999999999
+2018 June,411,7.8100000000000005
+2018 July,416,9.41
+2018 August,611,11.590000000000002
+2018 September,215,4.07
+
+Employee Id,Employee Name,Model,Purchase Date
+1911,Joe Swanson,Apple iPhone 6,20150405
+Minutes and Data Usage per month
+Month & Year,Minutes,Data
+2017 September,403,7.39
+2017 October,373,6.32
+2017 November,591,10.42
+2017 December,296,3.19
+2018 January,719,11.940000000000001
+2018 February,282,2.2899999999999996
+2018 March,539,10.67
+2018 April,301,9.15
+2018 May,322,6.83
+2018 June,185,6.5
+2018 July,493,7.329999999999999
+2018 August,274,6.380000000000001
+2018 September,517,8.88
+
+Cell Phone,Samsung Galaxy 6
+Employee Id,Employee Name,Model,Purchase Date
+1903,Stevie Griffin,Samsung Galaxy 6,20150101
+Minutes and Data Usage per month
+Month & Year,Minutes,Data
+2017 September,329,8.78
+2017 October,404,8.51
+2017 November,329,8.459999999999999
+2017 December,429,13.389999999999999
+2018 January,649,13.059999999999999
+2018 February,384,3.3
+2018 March,810,14.740000000000002
+2018 April,653,9.930000000000001
+2018 May,586,10.920000000000002
+2018 June,108,5.48
+2018 July,379,8.74
+2018 August,436,11.98
+2018 September,355,4.46
+
+Employee Id,Employee Name,Model,Purchase Date
+1906,Brian Griffin,Samsung Galaxy 6,20150101
+Minutes and Data Usage per month
+Month & Year,Minutes,Data
+2017 September,176,5.73
+2017 October,288,5.72
+2017 November,355,9.94
+2017 December,322,5.68
+2018 January,373,8.81
+2018 February,381,7.800000000000001
+2018 March,375,6.9399999999999995
+2018 April,481,8.91
+2018 May,681,19.909999999999997
+2018 June,516,6.6
+2018 July,575,10.719999999999997
+2018 August,384,4.0600000000000005
+2018 September,192,3.9
+
+Employee Id,Employee Name,Model,Purchase Date
+1909,Chris Griffin,Samsung Galaxy 6,20150101
+Minutes and Data Usage per month
+Month & Year,Minutes,Data
+2017 September,85,1.43
+2017 October,318,5.08
+2017 November,322,7.64
+2017 December,523,10.32
+2018 January,643,18.660000000000004
+2018 February,419,7.53
+2018 March,282,7.87
+2018 April,368,4.66
+2018 May,402,9.07
+2018 June,549,9.0
+2018 July,449,5.98
+2018 August,371,7.89
+2018 September,127,3.65
+

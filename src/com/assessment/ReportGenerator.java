@@ -17,7 +17,9 @@ public class ReportGenerator {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the file name of first file :");
         String cellPhoneFile = scanner.next();
+        System.out.print("Enter the file name of second file :");
         String cellPhoneUsageFile = scanner.next();
 
 
@@ -38,7 +40,7 @@ public class ReportGenerator {
 
         Map<Integer,Employee> employeeMap = pair.a;
         Map<String, List<Integer>> cellPhoneMap = pair.b;
-        Map<Integer, List<CellPhoneUsage>> cellPhoneUsages = wrapper.getMap();
+        Map<Integer, CellPhoneUsage> cellPhoneUsages = wrapper.getMap();
 
         SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
         Date parse = null;
@@ -60,26 +62,29 @@ public class ReportGenerator {
         dataLines.add(new String[]{"Total Data", String.valueOf(wrapper.getTotaldata())});
         dataLines.add(new String[]{"Average Minutes", String.valueOf(wrapper.getTotalMinutes() / wrapper.getMap().size())});
         dataLines.add(new String[]{"Average Data", String.valueOf(wrapper.getTotaldata() / wrapper.getMap().size())});
-
+        // empty line
+        dataLines.add(new String[]{""});
 
         dataLines.add(new String[]{"Cell Phone Usage per company"});
-        for ( Map.Entry<String, List<Integer>> entry : cellPhoneMap.entrySet()) {
+        for (Map.Entry<String, List<Integer>> entry : cellPhoneMap.entrySet()) {
             List<Integer> empList = entry.getValue();
             dataLines.add(new String[]{"Cell Phone", entry.getKey()});
-            dataLines.add(new String[]{"Employee Id", "Employee Name", "Model", "Purchase Date"});
 
             for(Integer empId: empList) {
+                dataLines.add(new String[]{"Employee Id", "Employee Name", "Model", "Purchase Date"});
                 Employee employee = employeeMap.get(empId);
                 dataLines.add(new String[]{String.valueOf(employee.getEmployeeId()), employee.getEmployeeName(), employee.getModel(), employee.getPurchaseDate()});
                 dataLines.add(new String[]{"Minutes and Data Usage per month"});
                 dataLines.add(new String[]{"Month & Year", "Minutes", "Data"});
-                List<CellPhoneUsage> list = cellPhoneUsages.get(empId);
+                CellPhoneUsage cellPhoneUsage = cellPhoneUsages.get(empId);
 
-                for (CellPhoneUsage cellPhoneUsage : list) {
-                    parse = sdf.parse(cellPhoneUsage.getDate());
-                    c.setTime(parse);
-                    dataLines.add(new String[]{c.get(Calendar.MONTH) + "  " + c.get(Calendar.YEAR), String.valueOf(cellPhoneUsage.getTotalMinutes()), String.valueOf(cellPhoneUsage.getTotalData())});
+                for (Map.Entry<String, Integer> monthUsage : cellPhoneUsage.getMinutesMap().entrySet()) {
+
+                    dataLines.add(new String[]{monthUsage.getKey(), String.valueOf(monthUsage.getValue()), String.valueOf(cellPhoneUsage.getDataMap().get(monthUsage.getKey()))});
                 }
+                // empty line
+                dataLines.add(new String[]{""});
+
             }
 
         }

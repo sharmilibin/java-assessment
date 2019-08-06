@@ -1,18 +1,17 @@
 package com.assessment;
 
-import java.util.List;
 import java.util.Map;
 
 public class CellPhoneUsageWrapper {
-    private Map<Integer, List<CellPhoneUsage>> map;
+    private Map<Integer, CellPhoneUsage> map;
     private Integer totalMinutes;
     private Double totaldata;
 
-    public Map<Integer, List<CellPhoneUsage>> getMap() {
+    public Map<Integer, CellPhoneUsage> getMap() {
         return map;
     }
 
-    public void setMap(Map<Integer, List<CellPhoneUsage>> map) {
+    public void setMap(Map<Integer, CellPhoneUsage> map) {
         this.map = map;
     }
 
