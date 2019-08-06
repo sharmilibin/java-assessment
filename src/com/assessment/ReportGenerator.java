@@ -100,6 +100,7 @@ public class ReportGenerator {
                     .map(ReportGenerator::convertToCSV)
                     .forEach(pw::println);
         }
+        System.out.println("Report Generated.. Check in output folder");
 
     }
     private static String convertToCSV(String[] data) {
